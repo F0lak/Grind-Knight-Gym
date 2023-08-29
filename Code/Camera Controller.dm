@@ -29,13 +29,13 @@ client
 
 
 client
-	var/camera/camera
+	var/camera_controller/camera
 	New()
 		..()
 		camera = new(src, 640, 480) // We'll create a new camera for the client which will control the resolution
 
 
-camera
+camera_controller
 	// The width and height of the camera, in pixels.  Together they are the resolution of the camera
 	var/width
 	var/height
